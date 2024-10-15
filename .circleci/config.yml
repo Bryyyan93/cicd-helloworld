@@ -65,7 +65,7 @@ workflows:
   test-deploy:
     jobs:
       - test:
-          context: SonarCloud
+          context: SonarCloud # Crear la variable de entorno en circleci
       - deploy:
           context: dev
           requires:
